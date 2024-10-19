@@ -1,0 +1,115 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f0f0f0; /* Light mode background */
+  color: #333; /* Light mode text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
+}
+
+.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: #e0e0e0; /* Dark mode text color */
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc; /* Separator line */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em; /* Increased font size */
+}
+
+/* Button styles */
+button {
+  padding: 10px 15px;
+  background-color: #6200ee; /* Primary button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #3700b3; /* Darker shade on hover */
+}
+
+/* Input styles */
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  width: 300px; /* Fixed width for input */
+  transition: border 0.3s ease; /* Smooth border effect */
+}
+
+input[type="text"]:focus {
+  border-color: #6200ee; /* Highlight border on focus */
+}
+
+/* Todo list styles */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between text and buttons */
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Separator for todos */
+  transition: background-color 0.3s ease; /* Smooth background effect */
+}
+
+li:hover {
+  background-color: rgba(98, 0, 238, 0.1); /* Light highlight on hover */
+}
+
+li span {
+  flex: 1; /* Allow text to take available space */
+  margin-right: 10px; /* Space between text and buttons */
+}
+
+button[aria-label="Toggle Complete"] {
+  background-color: transparent; /* Transparent button */
+  color: #6200ee; /* Primary color for complete button */
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+button[aria-label="Toggle Complete"]:hover {
+  color: #3700b3; /* Darker shade on hover */
+}
+
+button[aria-label="Delete Task"] {
+  background-color: #d32f2f; /* Red color for delete */
+}
+
+button[aria-label="Delete Task"]:hover {
+  background-color: #c62828; /* Darker shade on hover */
+}
+
+/* Language selector styles */
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-left: 10px; /* Space before the dropdown */
+  transition: border 0.3s ease; /* Smooth border effect */
+}
+
+select:focus {
+  border-color: #6200ee; /* Highlight border on focus */
+}
